@@ -12,6 +12,45 @@ https://templatemo.com/tm-557
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+.counter {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0 28px 0;
+ 
+}
+.counter .days,
+.counter .hours,
+.counter .minutes,
+.counter .seconds {
+  background: rgba(0, 0, 0, 0.192);
+  border-radius: 8px;
+  min-width: 80px;
+  padding: 18px 15px 12px 15px;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.233);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter .value {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.counter span {
+  font-size: 1em;
+  color: #d92d23;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
 /* Login Popup Overlay */
 .cover_box {
     position: fixed;
@@ -24,18 +63,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+
 }
 
 /* Centered Login Form Box */
 .form-box.login {
-    background: #fff;
+    background: rgba(1, 7, 2, 0.411);
     border-radius: 14px;
     padding: 36px 32px 32px 32px;
     box-shadow: 0 8px 36px rgba(0,0,0,0.17), 0 1.5px 8px rgba(0,0,0,.18);
     min-width: 340px;
-    max-width: 96vw;
+    width: 90%;
+    max-width: 96vw;    
     position: relative;
     animation: fade-in 0.85s;
+   
 }
 
 @keyframes fade-in {
@@ -114,7 +157,7 @@ body {
 }
 
 .remember-forgot a:hover {
-    color: #b4302e;
+    color: #d13913;
 }
 
 .btn {
@@ -148,13 +191,23 @@ body {
     position: absolute;
     top: 18px;
     right: 32px;
+    border-radius: 50%;
+    width: 38px;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
     font-size: 2.3rem;
-    color: #a72019;
+    color: #050706;
+    display: flex;
     cursor: pointer;
     z-index: 1002;
     font-weight: 700;
-    background: none;
+    background: rgba(108, 180, 130, 0.466) ;
     border: none;
+}
+.icon-close:hover {
+    background: #e74c3c;
+    color: #fff;
 }
 
 /* Basic */
