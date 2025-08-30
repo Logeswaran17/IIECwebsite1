@@ -49,35 +49,63 @@ https://templatemo.com/tm-557-grad-school
             <li><a href="#section2">Who we are?</a></li>
             <li><a href="#section3">What we do?</a></li>
             <li><a href="#section3">How it works?</a></li>
-            <li><a href="https://templatemo.com/about" rel="sponsored" class="external" style="color: rgb(2,2,81);">External URL</a></li>
+            <li><a href="http://instagram.com/iiec_education" rel="sponsored" class="external" style="color: rgb(2,2,81);">External Insta</a></li>
           </ul>
         </li>
         <li><a href="#section4" style="color: rgb(2, 2, 81);">Courses</a></li>
         <!-- <li><a href="#section5">Video</a></li> -->
         <li><a href="#section6" style="color: rgb(2, 2, 81);">Contact</a></li>
-        <li><a href="https://templatemo.com" class="external" style="color: rgb(2, 2, 81);">Blog</a></li>
+        <li><a href="http://www.linkedin.com/in/iiec-global" class="external" style="color: rgb(2, 2, 81);">Blog</a></li>
       </ul>
     </nav>
   </header>
-  <div class="cover_box">
-    <span class="icon-close">&times;</span>    
-    <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+  <div class="cover_box"id="loginpopup">        
     <div class="form-box login">
+      <div class="continer centerIt">
+            <div>
+              <h4>Take <em>any online course</em> and win $326 for your next class</h4>
+              <div class="counter">
+
+                <div class="days">
+                  <div class="value">00</div>
+                  <span>Days</span>
+                </div>
+
+                <div class="hours">
+                  <div class="value">00</div>
+                  <span>Hours</span>
+                </div>
+
+                <div class="minutes">
+                  <div class="value">00</div>
+                  <span>Minutes</span>
+                </div>
+
+                <div class="seconds">
+                  <div class="value">00</div>
+                  <span>Seconds</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      <span class="icon-close" id="closeBtn"><ion-icon name="close-outline"></ion-icon></span>
       <h2>Login</h2>
       <form action="#">
         <div class="input-box">
-          <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+          <span class="icon"><ion-icon name="name"></ion-icon></span>
+          <input type="name" required>
+          <label>Name</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="email-outline"></ion-icon></span>
           <input type="email" required>
           <label>Email</label>
         </div>
         <div class="input-box">
-          <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-          <input type="password" required>
-          <label>Password</label>
-        </div>
-        <div class="remember-forgot">
-          <label><input type="checkbox">Remember me</label>
-          <a href="#">Forgot Password?</a>
+          <span class="icon"><ion-icon name="phone-outline"></ion-icon></span>
+          <input type="phone" required>
+          <label>Phone No:</label>
         </div>
         <button type="submit" class="btn">Login</button>
           <p>Don't have an account? </p>
@@ -447,16 +475,16 @@ https://templatemo.com/tm-557-grad-school
             <h4>Watch the video to learn more <em>about IIEC </em></h4>
             <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. You may <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> for details.
             <br><br>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
-            <div class="main-button"><a rel="nofollow" href="https://fb.com/templatemo" target="_parent">External URL</a></div>
+            <div class="main-button"><a rel="nofollow" href="http://facebook.com/IIECEducation" target="_parent">External FB URL</a></div>
           </div>
         </div>
         <div class="col-md-6">
           <article class="video-item">
             <div class="video-caption">
-              <h4>Power HTML Template</h4>
+              <h4>IIEC Educational Youtube</h4>
             </div>
             <figure>
-              <a href="https://www.youtube.com/watch?v=r9LtOG6pNUw" class="play"><img src="c:\Users\Logesh\OneDrive\Gambar\main-thumb.jpg"></a>
+              <a href="http://www.youtube.com/@WeAreIIEC" class="play"><img src="c:\Users\Logesh\OneDrive\Gambar\main-thumb.jpg"></a>
             </figure>
           </article>
         </div>
@@ -510,6 +538,9 @@ https://templatemo.com/tm-557-grad-school
         </div>
       </div>
     </div>
+    </div>
+    <div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </section>
 
   <footer>
@@ -536,6 +567,9 @@ https://templatemo.com/tm-557-grad-school
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
+      document.getElementById("closeBtn").onclick = function() {
+        document.getElementById("loginpopup").style.display = "none";
+      }
         //according to loftblog tut
         $('.nav li:first').addClass('active');
 
