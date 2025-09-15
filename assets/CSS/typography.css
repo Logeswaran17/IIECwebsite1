@@ -1,0 +1,464 @@
+/*
+Table Of Contents
+=========================
+- Default Typography
+- Custom Typography
+=========================
+*/
+/*
+font-family: 'Libre Baskerville', serif;
+font-family: 'Rubik', sans-serif;
+*/
+
+
+/*
+--------------------------
+- Default Typography
+--------------------------
+*/
+
+
+p img {
+    margin: 0;
+} 
+
+/* em and strong */
+
+em {
+    font: 15px/30px;
+}
+
+strong,
+b {
+    font: 15px/30px;
+}
+
+small {
+    font-size: 11px;
+    line-height: inherit;
+}
+
+
+/*  blockquotes */
+
+blockquote {
+    border-left: 0 none;
+    font-family: 'Nunito', sans-serif;
+    margin: 10px 0;
+    padding-left: 40px;
+    position: relative;
+}
+
+blockquote::before {
+    color: #4e5665;
+    content: "ï„";
+    font-family: FontAwesome;
+    font-size: 36px;
+    left: 20px;
+    line-height: 0;
+    margin: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 20px;
+}
+
+blockquote p {
+    font-style: italic;
+    padding: 0;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+blockquote cite {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+}
+
+blockquote cite:before {
+    content: "\2014 \0020";
+}
+
+blockquote cite a,
+blockquote cite a:visited {
+    color: #8B9798;
+    border: none
+}
+
+
+/* abbreviations */
+
+abbr {
+    color: #444;
+    font-weight: 700;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: .6px;
+}
+
+abbr:hover {
+    cursor: help;
+}
+
+
+/* links */
+
+a,
+a:visited {
+    text-decoration: none; 
+    font-weight: normal;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    outline: 0;
+}
+
+a:hover,
+a:active {
+    color: #ffb607;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+p a,
+p a:visited {
+    line-height: inherit;
+    outline: 0;
+}
+
+a.active {
+    color: #ffb607;
+}
+
+
+/* list */
+
+ul,
+ol {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ol,
+ul.square,
+ul.circle,
+ul.disc {
+    margin-left: 0px;
+}
+
+ul.square {
+    list-style: square outside;
+}
+
+ul.circle {
+    list-style: circle outside;
+}
+
+ul.disc {
+    list-style: disc outside;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin: 0;
+}
+
+ul ul li,
+ul ol li,
+ol ol li,
+ol ul li {
+    margin-bottom: 0px;
+}
+
+li {
+    line-height: 18px;
+    margin-bottom: 0px;
+}
+
+ul.large li {}
+
+li p {}
+
+
+/* definition list */
+
+dl {
+    margin: 12px 0;
+}
+
+dt {
+    margin: 0;
+    color: #11ABB0;
+}
+
+dd {
+    margin: 0 0 0 20px;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+
+/*
+--------------------------
+- Custom Typography
+--------------------------
+*/
+
+
+/* Your Custom Typography. */
+@media screen and (max-width: 767px) {
+}
+.footer {
+  background: #11283f;
+  color: #fff;
+  padding: 32px 0 0 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.footer-info {
+  flex: 1 1 300px;
+  min-width: 240px;
+  margin-right: 40px;
+}
+.footer-logo img {
+  display: block;
+  margin-bottom: 10px;
+}
+.footer-info p,
+.footer-info a {
+  color: #fff;
+  font-size: 16px;
+  margin: 10px 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-info a {
+  color: #e5eaee;
+}
+.footer-info i {
+  color:#242526;
+  margin-right: 8px;
+  font-size:18px;
+  vertical-align: middle;
+}
+
+.footer-about {
+  flex: 1 1 300px;
+  min-width: 240px;
+  text-align: left;
+  margin-left: 90px;
+  margin-top: 20px;
+}
+.footer-about h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #f1f1f1;
+}
+.footer-about p {
+  font-size: 14px;
+  color: #e0e0e0;
+  margin-bottom: 18px;
+}
+.footer-social {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.footer-social a {
+  color: #fff;
+  font-size: 30px;
+  margin: 0 8px;
+  border-radius: 6px;
+  padding: 8px;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+.footer-social .fab.fa-facebook:hover { color: #070fff; }
+.footer-social .fab.fa-whatsapp:hover { color: #07dc31; }
+.footer-social .fab.fa-instagram:hover { color: #a60857; }
+.footer-social .fab.fa-youtube:hover { color: #de0930; }
+.footer-social .fab.fa-linkedin:hover { color: #3014cf; }
+
+.footer-copyright {
+  width: 100%;
+  text-align: center;
+  padding-top: 18px;
+  font-size: 14px;
+  color: #aaa;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+  background: transparent;
+  height: 80px;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .footer-about,
+  .footer-info {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 745px) {
+  .footer-info p,
+  .footer-about p {
+    font-size: 14px;
+  }
+  .footer-copyright {
+    font-size: 12px;
+    padding-top: 14px;
+    margin-top: 16px;
+  }
+}
+/* Team Section */
+.team-section {
+  padding: 40px 0;
+  text-align: center;
+  background: #fff;
+}
+
+.team-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Make team-container cover the full width */
+.team-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  padding: 40px 0; /* optional: space from edge */
+  box-sizing: border-box;
+  gap: 30px;
+  margin-left: 20px;
+}
+section.reverse1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 0px;
+  gap: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+
+/* Each card stretches equally */
+.team-member {
+  background: #ececef;
+  border-radius: 15px;
+  padding: 30px 20px 20px 20px;
+  flex: 1 1 0px;
+  min-width: 330px;
+  /* Remove fixed width, let flex grow */
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0; /* No extra margin */
+}
+
+.team-member img {
+  width: 220px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  border: 2px solid #dedede;
+}
+
+.member-info {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 18px;
+  width: 100%;
+  text-align: left;
+  margin-top: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  position: relative;
+}
+
+.member-info .name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #222;
+}
+
+.member-info .role {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 3px;
+}
+
+.team-member.highlight .member-info :hover {
+  border: 2px solid #1d72b8;
+  background: #e9f3fb;
+}
+
+.arrow {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #1d72b8;
+  font-weight: 700;
+}
+
+/* Responsive: stack cards vertically for narrow screens */
+@media (max-width: 900px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-member {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
