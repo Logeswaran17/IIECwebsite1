@@ -12,6 +12,7 @@ https://templatemo.com/tm-557
 body {
     font-family: 'Montserrat', sans-serif;
 }
+<<<<<<< HEAD
 /*review-text*/
 .full-text {
   display: none;
@@ -25,6 +26,8 @@ body {
   display: none;
 }
 
+=======
+>>>>>>> 319389ebada95b5a62b4b0d917c485df264e114f
 
 .counter {
   display: flex;
@@ -251,10 +254,13 @@ p {
     text-align: center;
     margin-bottom: 70px;
 }
+<<<<<<< HEAD
 .main-heading.scrolled {
     margin-top: 70px;
     background-color: rgba(10, 4, 4, 0.73);
 }
+=======
+>>>>>>> 319389ebada95b5a62b4b0d917c485df264e114f
 
 .section-heading h2:before {
     width: 1px;
@@ -401,6 +407,7 @@ a.menu-link { display: none; }
       margin-left: 5px!important;
   }
 }
+<<<<<<< HEAD
 .top-bar {
     background-color: rgba(8, 28, 60, 0.873);
     text-align: center;
@@ -420,11 +427,20 @@ a.menu-link { display: none; }
 .main-header {
     background-color: rgba(240, 238, 234, 0.533);
     height: auto;
+=======
+
+.main-header {
+    background-color: rgba(240, 238, 234, 0.258);
+    height: 80px;
+>>>>>>> 319389ebada95b5a62b4b0d917c485df264e114f
     position: fixed;
     z-index: 12;
     width: 100%;
     top: 0;
+<<<<<<< HEAD
     transition: background-color 0.3s;
+=======
+>>>>>>> 319389ebada95b5a62b4b0d917c485df264e114f
 }
 
 .main-header .logo {
@@ -1700,16 +1716,27 @@ img.mfp-img {
 /* Contact */
 
 section.contact {
+<<<<<<< HEAD
     background-image: url(../images/keyboard.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #050b19;
+=======
+    background-image: url(../images/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #172238;
+>>>>>>> 319389ebada95b5a62b4b0d917c485df264e114f
     padding-bottom: 120px;
 }
 
 
 section.contact form {
+<<<<<<< HEAD
     background-color: rgba(30, 9, 9, 0.296);
+=======
+    background-color: rgba(250,250,250,0.1);
+>>>>>>> 319389ebada95b5a62b4b0d917c485df264e114f
     padding: 30px;
     width: 100%;
 }
@@ -1783,12 +1810,19 @@ section.contact form button {
 /* Footer */
 
 footer {
+<<<<<<< HEAD
     height: auto;
+=======
+>>>>>>> 319389ebada95b5a62b4b0d917c485df264e114f
     background-color: #152036;
     text-align: center;
 }
 
+<<<<<<< HEAD
 footer {
+=======
+footer p {
+>>>>>>> 319389ebada95b5a62b4b0d917c485df264e114f
     margin-bottom: 0px;
     padding: 25px 0px;
     color: #fff;
@@ -1840,6 +1874,7 @@ footer p a:hover {
   }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 745px) {
 }
 .footer {
@@ -1962,5 +1997,12 @@ footer p a:hover {
     font-size: 12px;
     padding-top: 14px;
     margin-top: 16px;
+=======
+@media screen and (max-width: 767px) {
+  footer p {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+>>>>>>> 319389ebada95b5a62b4b0d917c485df264e114f
   }
 }
