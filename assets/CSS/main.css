@@ -2359,7 +2359,8 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
+.starter-section { 
+  margin: 0;
   /* Add your styles here */
 }
 
