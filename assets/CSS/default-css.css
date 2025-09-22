@@ -205,9 +205,7 @@ a.scrollup-btn:hover{
 .ptb--170 { padding: 170px 0 }
 .ptb--180 { padding: 180px 0 }
 
-.{
-    background: #edf1ff;
-}
+/* Removed invalid selector */
 
 /*prealoder css*/
 #preloader {
