@@ -11,7 +11,13 @@ https://templatemo.com/tm-557
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 body {
     font-family: 'Montserrat', sans-serif;
-}
+} 
+/*header after background color 
+.sticky-main-header {
+  position: fixed;
+  top: 0;
+  background: #08a308;
+}*/
 
 /*review-text*/
 .full-text {
@@ -424,13 +430,13 @@ a.menu-link { display: none; }
 }
 
 .main-header {
-    background-color: rgba(240, 238, 234, 0.533);
+    background-color: rgba(240, 238, 234, 0.956);
     height: auto;
 }
 
 .main-header {
-    background-color: rgba(240, 238, 234, 0.258);
-    height: 80px;
+    background-color: rgba(240, 238, 234, 0.978);
+    height: 100px;
 
     position: fixed;
     z-index: 12;
