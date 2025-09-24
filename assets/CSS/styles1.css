@@ -93,7 +93,7 @@ h6 {
 
 p {
   font-weight: normal;
-  letter-spacing: 0;
+  letter-spacing: 1; /* X i chage 0 to 1 */
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 30px;
