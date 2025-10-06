@@ -195,7 +195,7 @@ a:hover {
 
 .ht-address ul li {
   display: inline-block;
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0;
@@ -243,7 +243,7 @@ a:hover {
 .sticky-header {
   position: fixed;
   top: 0;
-  background: #041e8e;
+  background: #ffff;
 }
 
 .header-bottom-inner {
@@ -285,8 +285,8 @@ a:hover {
 }
 .main-menu nav ul li a {
   font-size: 13px;
-  font-weight: 700;
-  color: #fff;
+  font-weight:bolder;
+  color: #030b66;
   text-transform: uppercase;
   padding: 15px 10px;
   display: block;
@@ -309,7 +309,7 @@ a:hover {
 
 .main-menu nav ul li > a:hover,
 .main-menu nav ul li.active > a {
-  color: #031746;
+  color: #eceef3;
 }
 
 /*submenu*/
@@ -319,7 +319,7 @@ a:hover {
 
 .main-menu nav li .submenu {
   position: absolute;
-  background-color: #ea7c6fda;
+  background-color: #ede7e7da;
   width: 160px;
   text-align: left;
   -webkit-transform: scaley(0);
@@ -344,7 +344,7 @@ a:hover {
 }
 
 .main-menu nav .submenu li a {
-  color: #e7e0e0;
+  color: #130475;
   padding: 16px 15px;
   border-bottom: 1px solid #f1ebeb;
 }
