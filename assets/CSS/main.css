@@ -1,0 +1,88 @@
+/* ===============================
+   ✅ Responsive Design Fixes
+   =============================== */
+
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden; /* Prevents unwanted horizontal scroll */
+}
+
+/* Container to center content and control width */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Make sections flexible */
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Make images and boxes fit smaller screens */
+.section img,
+.section .box {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 300px;
+}
+
+/* Responsive Navigation Menu */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+/* Tablet view (width ≤ 992px) */
+@media (max-width: 992px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Mobile view (width ≤ 576px) */
+@media (max-width: 576px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -29,7 +29,7 @@ Description: Responsive Education HTML5 Template
     9. Blog Details
    10. 404
    11. Color Switcher
- -----------------------------------------------------------------------------------*/
+ ----------------------------------------------------------------------------------*/
 
 /*============================================
     ##== Default Css
@@ -40,6 +40,7 @@ body {
   font-size: 16px;
   color: #8c8c8c;
   line-height: 26px;
+
 }
 h1,
 h2,
@@ -749,8 +750,8 @@ a.expand-video:hover {
 .course-meta-text h4 a:hover {
   color: #970303;
 }
-ul.course-meta-stats {
-}
+/*ul.course-meta-stats {
+}*/
 
 ul.course-meta-stats li {
   display: inline-block;
@@ -1278,10 +1279,10 @@ span.post-date i {
   border-color: #030556 !important;
 }
 
-.header-bottom-right-style-2 li a:hover,
+/*.header-bottom-right-style-2 li a:hover,
 .header-bottom-right-style-2 li a.active {
 }
-
+*/
 .header-bottom-right-style-2 li:first-child a {
   margin-left: 0;
 }
@@ -2335,8 +2336,8 @@ h4.comment-title {
   font-size: 16px;
 }
 
-.contact-form {
-}
+/*.contact-form {
+}*/
 
 .contact-form form input,
 .contact-form form textarea {
