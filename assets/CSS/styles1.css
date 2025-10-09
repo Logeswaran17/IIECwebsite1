@@ -189,38 +189,47 @@ a:hover {
   position: relative;
 }
 
-.header-top {
+/*.header-top {
   background-color: #041853;
-  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 8%;
+  width: 100%;
+  height: 10px;
+  
+ 
+  
 }
 
 .ht-address ul li {
-  display: inline-block;
+
   color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 10px;
+  font-weight: 0;
   letter-spacing: 0;
-  margin-right: 17px;
+ 
 }
 .ht-address ul li i {
   font-size: 21px;
-  margin-right: 7px;
+ 
   vertical-align: middle;
 }
-.ht-social {
-  text-align: right;
-  margin-right: 20px;
-}
-
-.ht-social ul li {
-  display: inline-block;
-}
-
-.ht-social ul li a {
-
-  color: #fff;
-  font-size: 16px;
-  margin-left: 10px;
+  *this is about us page*/
+.top-bar1{
+  background-color: rgba(8, 28, 60, 0.873) ;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+    height: 30px;
+    color: #ffffff;
+    justify-content:space-between;
+    align-items: center;
+    gap: 8%;
+    display: flex;
+    transition: opacity 0.4s, visibility 0.4s;
+    position:relative;
+    z-index:999;
 }
 
 /*============================================
@@ -258,32 +267,36 @@ a:hover {
   border-color: #222;
 }
 
-.logo a {
-  display: inline-block;
-}
-.logo-img {
-  background-color: white;
-  width: 200px;
-  height: 70px;
-  border-radius: 14px;
-  margin-top: 10px;
-}
+.logo-img{
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  
+  float: left;
 
-
-.main-menu nav ul {
-  display: flex;
-  text-align:right;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+}
+.logo{
+  padding-left: 24px;
 }
 
 .main-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
+  float: right;
+   
 }
+
+
+.main-menu nav ul {
+  display: flex;  
+  gap: 8%;
+  margin: 0;
+  padding: 0;
+}
+
+
 .main-menu nav ul li a {
   font-size: 13px;
   font-weight:bolder;
@@ -291,11 +304,22 @@ a:hover {
   text-transform: uppercase;
   padding: 15px 10px;
   display: block;
+  max-width: 90x;
+  white-space:nowrap;
+  text-align: center;
 }
+
 @media (max-width: 992px) {
-  .main-menu {
+  .header-bottom-inner .row{
     flex-direction: column;
     align-items: flex-start;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .main-menu {
+    justify-content: flex-start;
+    width: 100%;
   }
 
   .main-menu nav ul {

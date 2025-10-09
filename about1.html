@@ -4,24 +4,24 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>About us IIEC Educatioal</title>
+    <title>IIEC Educational</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="assets/images/IIEC.jpg">
     <!-- all css here -->
-    <link rel="stylesheet" href="assets/CSS/bootstrap_min.css">
-    <link rel="stylesheet" href="assets/CSS/reponive.css">
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min2.css">
     <link rel="stylesheet" href="assets/CSS/font-awesome.min.css">
     <link rel="stylesheet" href="assets/CSS/owl.carousel.min1.css">
     <link rel="stylesheet" href="assets/CSS/magnific-popup1.css">
     <link rel="stylesheet" href="assets/CSS/slicknav.min1.css">
     <link rel="stylesheet" href="assets/CSS/typography1.css">
     <link rel="stylesheet" href="assets/CSS/default-css1.css">
-    <link rel="stylesheet" href="assets/CSS/styles1.css">
+    <link rel="stylesheet" href="assets/css/styles1.css">
     <link rel="stylesheet" href="assets/CSS/responsive1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-     <style>
+
+    <!--color css-->
+    <link rel="stylesheet" id="triggerColor" href="assets/CSS/triggerplate/color-0.css">
+    <style>
         .section {
             display: flex;
             align-items: flex-start;
@@ -139,11 +139,22 @@
            align-items: center;
            min-height: 170px; /* Adjust height as needed */
            padding: 20px;
-           width: 32%;
+           width: 100%;
            margin-bottom: 50px;
            overflow: hidden;
            line-height: 1.3;
            border-radius: 40px;
+        }
+        /*Responsive for tablets and desktop*/
+        @media (min-width: 768){
+            .stat-item{
+                width: 32%;
+                margin-bottom: 0;
+            }
+             .stat-clean{
+                width: 32%;
+                margin-bottom: 0;
+            }
         }
         .stat-number {
            font-size: 4em;
@@ -157,13 +168,12 @@
         }
 
     </style>
-    <!--color css-->
-    <link rel="stylesheet" id="triggerColor" href="assets/css//color-0.css">
+
     <!-- modernizr css -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
-<body onload="startCounter()">
+<body>
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -175,18 +185,20 @@
     <!-- header area start -->
     <header id="header">
         <!-- header top area start -->
-        <div class="header-top">
-            <div class="container1">
-                <div class="row d-flex flex-center">
-                    <div class="col-sm-8">
-                        <div class="ht-address" style="height: 8px;font-size: 1.2;align-items: center;display: flex;font-size: 1.2rem;">
-                            <ul>
-                                <li style="font-size: 1.3rem;"><i class="fa fa-phone" style="margin-left: 100px;font-size: 1.5rem;"></i>+91 9841512043 / +91 9841577880</li>
-                                <li style="font-size: 1.3rem;"><i class="fa fa-envelope" style="margin-left: 80px;font-size: 1.5rem;"></i>info@iiec.co.in</li>
-                                <span style="margin-left: 170px;">No.78, 1st Floor, V.V.Koil Street, Thiruvaleeswarar Nagar Thirumangalam, Anna Nagar West, Chennai – 600 040</span>
-                            </ul>
+        
+                        <div class="top-bar1">
+                                <span class="fa fa-phone">+91 9841512043 / +91 9841577880</span>
+                                <span class="fa fa-envelope">info@iiec.in</span>
+                                <span class="fa fa-envelope">No.78, 1st Floor, V.V.Koil Street, Thiruvaleeswarar Nagar Thirumangalam, Anna Nagar West, Chennai – 600 040</span>
                         </div>
                     </div>
+                    <!--<div class="col-sm-4">
+                        <div class="ht-social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -196,40 +208,57 @@
             <div class="container">
                 <div class="header-bottom-inner">
                     <div class="row align-items-center">
-                        <div class="col-lg-3 col-sm-9">                            
+                        <div class="col-lg-3 col-sm-9">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/images/IIEClogo-Bremove1.png" alt="logo"></a>
+                            </div>
                         </div>
                         <div class="col-xl-8 col-lg-7 d-none d-lg-block">
-                            <div class="main-menu d-flex align-items-center justify-content-between">
-                                <div class="logo">
-                                    <a href="logo1">
-                                        <img style="margin-left: 50px;" src="assets/images/IIEC.jpg" alt="logo" class="logo-img">
-                                    </a>
-                                </div>
-                                <nav >                                    
-                                    <ul id="m_menu_active" class="d-flex align-items-center" style="margin-right: 90px;gap: 40px;">
+                            <div class="main-menu">
+                                <nav>
+                                    <ul id="m_menu_active">
                                         <li><a href="index.html">Home</a>
+                                            <!--<ul class="submenu">
+                                                <li><a href="index.html">Home One</a></li>
+                                                <li><a href="index2.html">Home Two</a></li>
+                                                <li><a href="index3.html">Home Three</a></li>
+                                            </ul>-->
                                         </li>
-                                        <li class="active"><a href="about1.html" style="color: #030b66;font-weight:bolder; ">About Us</a>
+                                        <li class="active"><a href="about1.html">About</a>
+                                           <ul class="submenu">
+                                                <li><a href="index.html">Home One</a></li>
+                                                <li><a href="index2.html">Home Two</a></li>
+                                                <li><a href="index3.html">Home Three</a></li>
+                                            </ul> 
+                                        </li>
+                                        <li><a href="services1.html">Services</a>
                                             <ul class="submenu">
-                                                <li><a href="#section4">Team ?</a></li>
-                                                <li><a href="#section3">What we do?</a></li>
-                                                <li><a href="#section3">How it works?</a></li>
-                                            </ul>            
+                                                <li><a href="courses.html">courses</a></li>
+                                                <li><a href="course-details.html">course details</a></li>
+                                            </ul>
                                         </li>
-                                        <li class="active"><a href="services1.html" style="color: #030b66">Services</a>
+                                        <!--<li><a href="javascript:void(0);">teacher</a>
                                             <ul class="submenu">
-                                                <li><a href="#section4">Training</a></li>
-                                                <li><a href="#section3">Testimonials</a></li>
-                                                <li><a href="#section3">Membership</a>                  
-                                                </li>
-                                            </ul>            
-                                        </li>
+                                                <li><a href="teachers.html">teachers</a></li>
+                                                <li><a href="teacher-details.html">teacher details</a></li>
+                                            </ul>
+                                        </li>-->
                                         <li><a href="Contact1.html">Contact</a></li>
-                                        <li><a href="https://substack.com/@infoiiec">Blog</a>
-                                        </li>                                        
+                                        <li><a href="https://substack.com/@infoiiec">blog</a>
+                                        
                                     </ul>
                                 </nav>
                             </div>
+                        </div>
+                        <!--<div class="col-xl-1 col-lg-2 col-sm-3">
+                            <div class="hb-right">
+                                <ul> 
+                                    <li class="search_btn"><i class="fa fa-search"></i></li>
+                                </ul>
+                            </div>
+                        </div>-->
+                        <div class="col-12 d-block d-lg-none">
+                            <div id="mobile_menu"></div>
                         </div>
                     </div>
                 </div>
@@ -239,6 +268,12 @@
     </header>
     <!-- header area end -->
     <!-- offset search area start -->
+    <div class="offset-search">
+        <form action="#">
+            <input type="text" name="search" placeholder="Sarch here...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
     <!-- offset search area end -->
     <!-- body overlay area start -->
     <div class="body_overlay"></div>
@@ -253,28 +288,37 @@
     </div>
     <!-- crumbs area end --> 
     <!-- about area start -->
+    <div class="about-area ptb--120">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about-left-content">
                         <div class="section-title">
-                            <div class="section-title">
-                                <span class="text-uppercase">about us</span>
-                                <h2>🌍 Welcome to <span>Our </span> <span class="primary-color">International Intelligent</span></h2><h2 style="margin-left: 40px;"> Educational Consultancy<span class="primary-color">(IIEC)</span></h2><h2><span class="primary-color" style="margin-left: 30px;"> - About us</span></h2>
-                                <p style="margin-left: 50px;color: #222;"><li style="margin-left: 50px;color: #222;font-size: 20px;">17 Years of Excellence | 17,000+ Students | 2,500+ Immigrants | 250+ Business Setups.</li></p>
-                                <p style="margin-left: 50px;color: #222;"><li style="margin-left: 50px;color: #222;font-size: 20px;">International Intelligent Educational Consultancy, we don’t just guide dreams—we build futures.</li></p>
-                                <p style="margin-left: 50px;color: #222;"><li style="margin-left: 50px;color: #222;font-size: 20px;width: 1000px;line-height: 1.6;">With 17 years of trusted expertise, we have proudly shaped the global journeys of thousands of students, professionals, and entrepreneurs across the world.</li></p>
-                                <p style="margin-left: 50px;color: #222;"><li style="margin-left: 50px;color: #222;font-size: 20px;">Your trusted partner in shaping global careers through world-class education.</li></p>
-                                <p style="margin-left: 50px;color: #222;"><li style="margin-left: 50px;color: #222;font-size: 20px; width: 1200px; line-height: 1.6;list-style-position: outside;">At International Intelligent Educational Consultancy (IIEC), we believe education is more than academics – it’s about unlocking potential, expanding horizons, and building a future without boundaries. With years of expertise in overseas education, we guide ambitious students to achieve their dreams of studying in top universities worldwide.</li></p>
-                                <a href="#" class="btn btn-primary btn-round">Read more</a>
-                                <div class="col-lg-6">
-                                </div>
-                            </div>
+                             <span class="text-uppercase">about us</span>
+                            <h2>🌍 Welcome to</h2><h2><span>Our </span> <span class="primary-color">International Intelligent</span></h2> 
+                            <h2 > Educational Consultancy<span class="primary-color">(IIEC)</span></h2><h2><span class="primary-color"> - About us</span></h2>
+                             <p style="color: #222;"><li >17 Years of Excellence | 17,000+ Students | 2,500+ Immigrants | 250+ Business Setups.</li></p>
+                                <p style="color: #222;"><li >International Intelligent Educational Consultancy, we don’t just guide dreams—we build futures.</li></p>
+                                <p style="color: #222;"><li >With 17 years of trusted expertise, we have proudly shaped the global journeys of thousands of students, professionals, and entrepreneurs across the world.</li></p>
+                                <p style="color: #222;"><li >Your trusted partner in shaping global careers through world-class education.</li></p>
+
+                        </div>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia incidunt ut labore et dolore magnam aliquam quaerat voluptatem.At International Intelligent Educational Consultancy (IIEC), we believe education is more than academics – it’s about unlocking potential, expanding horizons, and building a future without boundaries. With years of expertise in overseas education, we guide ambitious students to achieve their dreams of studying in top universities worldwide.</p>
+                        <!--<a href="#" class="btn btn-primary btn-round">Read more</a>-->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="abt-right-thumb">
+                        <div class="abt-rt-inner">
+                            <a class="expand-video" href="https://www.youtube.com/watch?v=cdfMgotGKIM"><i class="fa fa-play"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-       <!-- Step 1: Text left, image right -->
+
+        </div>
+    </div>
+    <!-- Step 1: Text left, image right -->
         <div class="section reverse">
             <div class="section reverse">
                 <div class="image">
@@ -306,7 +350,7 @@
             <div class="image">
                 <img src="assets/images/blog/blog-thumbnail2.jpg" style="height: 350px;width: 650px;" alt="Academic Image"/>
             </div>
-            <div class="text" style="margin-top: 40px;">
+            <div class="text" >
                 <h2>Why Choose IIEC?</h2>
                 <li>17+ Years of Legacy – A trusted name in overseas education and immigration.</li><br>
                 <li>Global Network – Partnerships with universities, governments, and business councils.</li><br>
@@ -318,7 +362,7 @@
 
     <!-- Step 3: Text left, image right -->
       <div class="section">
-          <div class="text" style="margin-top: 40px;">
+          <div class="text" >
               <h2>Our benefits</h2>
               <p>At IIEC, we believe effective language learning involves much more than just passing exams. Our approach is holistic, combining rigorous training in English proficiency with real-world communication skills that are essential for success abroad. We focus on building your confidence to interact naturally in academic environments and professional settings.</p>
           </div>
@@ -330,7 +374,7 @@
             <div class="image">
                 <img src="assets/images/IIEC-team.jpg" style="height: 350px;width: 650px;" alt="Academic Image"/>
             </div>
-            <div class="text" style="margin-top: 40px;">
+            <div class="text">
                 <h2>Why Choose Us?</h2>
                 <li>Expert Guidance: Our team of experienced counselors and consultants provide expert guidance and support, helping clients navigate complex processes with confidence.</li><br>
                 <li>Personalized Approach: We understand that each client is unique, which is why we offer personalized solutions tailored to their individual goals and aspirations.</li><br>
@@ -339,7 +383,7 @@
         </div>
       </div> 
       <div class="section">
-          <div class="text" style="margin-top: 40px;">
+          <div class="text">
               <h2>Our Mission</h2>
               <p><li>🚀 It provides global opportunities—whether in education, careers, or entrepreneurship.</li><br>
                  <li>🎯 Their mission is to turn dreams into real achievements on an international scale.</li><br>  
@@ -364,24 +408,7 @@
     <!-- take toure area end -->
  
      <!-- cta area start --> 
-    <div class="container pb--120"style="width: 1000px;margin-left: 220px;">
-        <div class="cta-area primary-bg has-color ptb--50 pl-5 pr-5"style="width: 1000px; margin-right:230px;border-radius: 20px;">
-            <div class="row align-items-center" style="margin-left: 20px;">
-                <div class="col-md-9">
-                    <div class="cta-content">
-                        <p class="mb-2">Click to Join the Advance Workshop</p>
-                        <h2>Training in advance networking</h2>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="cta-btn">
-                        <a class="btn btn-light btn-round" href="index.html#container" style="margin-bottom: 40px;margin-right: 20px;">Join Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="stats-clean" style="width: 1000px;margin-left: 220px;">
+    <div class="stats-clean" style="width: 100%;">
             <div class="stat-item">
                 <span class="stat-number" id="clients">30K</span>
                 <div class="stat-label">We Have Worked With Clients</div>
@@ -391,10 +418,51 @@
                 <div class="stat-label"style="">Successful Visa Process Rate</div>
             </div>
             <div class="stat-item">
-                <span class="stat-number" style="line-height: 1.3;">1-DAY</span>
+                <span class="stat-number" id="days" style="line-height: 1.3;">1-DAY</span>
                 <div class="stat-label">Application Approval Processing Time</div>
             </div>
     </div>
+    <!-- cta area end -->
+
+
+    <!-- about area end -->
+    <!-- take toure area start -->
+    <div class="take-toure-area ptb--120">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="section-title sec-style-two">
+                        <img class="title-top-shape" src="assets/images/IIEC.jpg" alt="image">
+                        <span class="text-uppercase">Take A Tour</span>
+                        <h2>Video Tour in IIEC</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="video-area">
+                <a class="expand-video" href="https://www.youtube.com/watch?v=cdfMgotGKIM"><i class="fa fa-play"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- take toure area end -->
+ 
+     <!-- cta area start --> 
+    <div class="container pb--120">
+        <div class="cta-area primary-bg has-color ptb--50 pl-5 pr-5">
+            <div class="row align-items-center">
+                <div class="col-md-9">
+                    <div class="cta-content">
+                        <p class="mb-2">Click to Join the IIEC</p>
+                        <h2>Language Training </h2>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="cta-btn">
+                        <a class="btn btn-light btn-round" href="#">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
     <!-- cta area end -->
 
     <!-- teacher area start -->
@@ -402,43 +470,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-6">
-                    <section class="team-section" data-section="section4">
-                        <h2 style="margin-right: 0px; font-weight: 20px;font-size: 50px;">Team Members</h2>
-                        <div class="profile-section">
-                            <div class="profile-image">
-                                <img src="assets/images/sri-ma'am.jpg" alt="Volunteer">
-                            </div>
-                            <div class="profile-text">
-                                <h2 style="margin-left: 0px;">DR.SRIDEVI ARUNACHALAM</h2>
-                                <h4 style="margin-left: 120px;">Founder & Managing , IIEC</h4>
-                                <p class="role1" style="font-size: 30px;text-align: center;"> A visionary leader and dedicated founder of IIEC, Dr. Sridevi Arunachalam has pioneered innovative pathways for students seeking global education opportunities.</p>
-                            </div>    
-                        </div>
-                        <div class="team-container">
-                            <div class="team-member">
-                                <img src="assets/images/nezam-anna.jpg" alt="Team Member 1">
-                                <div class="member-info">
-                                    <p class="name">Dr.Nezam</p>
-                                    <p class="name">Project Manager</p>
-                                </div>
-                            </div>
-                            <div class="team-member highlight">
-                                <img src="assets/images/" alt="Team Member 2">
-                                <div class="member-info">
-                                    <p class="name">Ms.Shnekha</p>
-                                    <p class="name">IIEC counselor</p>
-                                     <div class="arrow">&#8594;</div>
-                                </div>
-                            </div>
-                            <div class="team-member">
-                                <img src="assets/images/MONISH.jpg" alt="Team Member 3">
-                                <div class="member-info">
-                                <p class="name">Mr.Monish</p>
-                                <p class="name">IIEC Manager</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>                    
+
                     <div class="section-title">
                         <span class="text-uppercase">Learn from <span class="primary-color">the best</span></span>
                         <h2>Our Teachers </h2> 
@@ -447,7 +479,7 @@
             </div>
             <div class="teacher-carousel owl-carousel card-deck">
               <div class="card mb-5"> 
-                <img src="assets/images/nezam2.jpg" style="height: 300px;width: 500px;"alt="image"> 
+                <img src="assets/images/teacher/teacher-member1.jpg" alt="image"> 
                 <div class="card-body teacher-content p-25">  
                   <h4 class="card-title mb-4"><a href="teachers.html">Patrick Garner Dony</a></h4>
                   <span class="primary-color d-block mb-3">Economist</span>
@@ -459,11 +491,11 @@
                     <li><a href="#"><i class="fa fa-deviantart"></i></a></li>
                     <li><a href="#"><i class="fa fa-github"></i></a></li>
                   </ul>
-                </div> 
+                </div>
               </div><!-- card -->    
 
               <div class="card mb-5"> 
-                <img src="assets/images/ma'am.jpg"style="height: 300px;width: 400px;" alt="image"> 
+                <img src="assets/images/teacher/teacher-member2.jpg" alt="image"> 
                 <div class="card-body teacher-content p-25">  
                   <h4 class="card-title mb-4"><a href="teachers.html">Cameron Brown</a></h4>
                   <span class="primary-color d-block mb-3">Financier</span>
@@ -476,10 +508,10 @@
                     <li><a href="#"><i class="fa fa-github"></i></a></li>
                   </ul>
                 </div>
-              </div>
-              <!-- card -->    
+              </div><!-- card -->    
+
               <div class="card mb-5"> 
-                <img src="assets/images/nezam-anna.jpg"style="height: 300px;width: 500px;" alt="image"> 
+                <img src="assets/images/teacher/teacher-member3.jpg" alt="image"> 
                 <div class="card-body teacher-content p-25">  
                   <h4 class="card-title mb-4"><a href="teachers.html">Joseph Mack Monika</a></h4>
                   <span class="primary-color d-block mb-3">Languages</span>
@@ -514,40 +546,40 @@
     <!-- teacher area end -->
  
     <!-- footer area start -->
-    <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-info">
-      <div class="footer-logo">
-        <img style="background-color: rgba(4, 29, 88, 0.8); width: 100px; height: 50px; border-radius: 10px; color: -1px; margin-left: 60px" src="assets/images/IIEC_logo.jpg" alt="IIEC Logo">
+    <footer style="background-color: rgb(2, 2, 105);">
+    <div class="footer-container">
+      <div class="footer-info">
+        <div class="footer-logo">
+          <img style="width: 50%; height: 50%;" src="assets/images/IIEC_logo.jpg" alt="IIEC Logo">
+        </div>
+        <p>
+          <strong><i style=" text-transform: none;" class="fas fa-map-marker-alt"></i></strong> <a href="#" style="text-align: left;">78,New No.8A, 1st Floor,V.V.Koil Street,Thiruvaleeswarar Nagar,Thirumangalam,Anna Nagar West,Chennai-600040</a><br>
+        </p>
+        <p>
+          <strong><i class="fa fa-phone"></i></strong> <a href="tel:+919841512043">+91 9841512043</a> / <a href="tel:+919841577880">+91 9841577880</a>
+        </p>
+        <p>
+          <strong><i class="fa fa-envelope"></i></strong> <a href="info@iiec.co.in">info@iiec.co.in</a>
+        </p>
       </div>
-      <p>
-        <strong><i style="margin-bottom: 65px;" class="fa fa-location-dot"></i></strong> <a href="#" style="margin-right: 60px;text-align: left;">78,New No.8A, 1st Floor,V.V.Koil Street,Thiruvaleeswarar Nagar,Thirumangalam,Anna Nagar West,Chennai-600040</a><br>
-      </p>
-      <p>
-        <strong><i class="fa fa-phone"></i></strong> <a href="tel:+919841512043">+91 9841512043</a> / <a href="tel:+919841577880">+91 9841577880</a>
-      </p>
-      <p>
-        <strong><i class="fa fa-envelope"></i></strong> <a href="info@iiec.co.in">info@iiec.co.in</a>
-      </p>
-    </div>
-    <div class="footer-about" style="margin-left: 30px;">
-      <h3>Working Hours</h3>
-      <p><ul>
-        <li>MON - SAT : 9:30AM - 6:30 PM</li><br>      
-        <li>SUNDAY : CLOSED</li>
-      </ul></p>
-      <div class="footer-social">
-        <a href="https://www.facebook.com/IIECIndia"><i class="fab fa-facebook"></i></a>
-        <a href="https://wa.me/919841512043"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.instagram.com/iiec_india/"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@IIECIndia"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/company/iiec-india"><i class="fab fa-linkedin"></i></a>
+      <div class="footer-about">
+        <h3>WORKIGN HOURS</h3>
+        <p><ul>
+          <li>MON - SAT : 9:30AM - 6:30 PM</li><br>      
+          <li>SUNDAY : CLOSED</li>
+        </ul></p>
+        <div class="footer-social">
+          <a href="https://facebook.com/IIECEducation"><i class="fab fa-facebook"></i></a>
+          <a href="https://wa.me/919841512043"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://instagram.com/iiec_education"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@WeAreIIEC"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/in/iiec-global"><i class="fab fa-linkedin"></i></a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="footer-copyright">
-    &copy; All Rights Reserved. Made by IIEC
-  </div>
+    <div class="footer-copyright">
+      &copy; All Rights Reserved. Made by IIEC
+    </div>
 </footer>
 
     <!-- footer area end -->
@@ -562,49 +594,7 @@
     <script src="assets/js/jquery.slicknav.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/main.js"></script>
 
-    <script>
-        function startCount() {
-    // Animate Clients (0K → 30K)
-            let clientElem = document.getElementById("clients");
-            let clientStart = 0;
-            let clientEnd = 30000;
-            let clientStep = Math.ceil(clientEnd / 60);
-            let clientInterval = setInterval(() => {
-                clientStart += clientStep;
-                if (clientStart >= clientEnd) {
-                    clientElem.textContent = "30K";
-                    clearInterval(clientInterval);
-                } else {
-                    clientElem.textContent = `${Math.floor(clientStart/1000)}K`;
-                }
-            }, 25);
-
-    // Animate Visa (0% → 100%)
-            let visaElem = document.getElementById("visa");
-            let visaStart = 0;
-            let visaEnd = 100;
-            let visaStep = 2;
-            let visaInterval = setInterval(() => {
-                visaStart += visaStep;
-                if (visaStart >= visaEnd) {
-                    visaElem.textContent = "100%";
-                    clearInterval(visaInterval);
-                } else {
-                    visaElem.textContent = `${visaStart}%`;
-                }
-            }, 20);
-
-    // Animate Days (0 DAY → 1 DAY)
-            let daysElem = document.getElementById("days");
-            daysElem.textContent = "0 DAY";
-            setTimeout(() => {
-                daysElem.textContent = "1 DAY";
-            }, 700);
-        }
-        document.addEventListener("DOMContentLoaded", startCount);
-    </script>
 </body>
 
 </html>
