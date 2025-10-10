@@ -127,33 +127,30 @@
             padding-bottom: 10px;
         }
         .stats-clean {
-            display: flex;
+            display: inline;
             justify-content: space-between;
-            height: 400px;
-            margin-top: 5px;
+            flex-direction: wrap;         
+           
+            width: 100%;
         }
         .stat-item {
            display: flex;
            flex-direction: column;
            justify-content: center;
            align-items: center;
-           min-height: 170px; /* Adjust height as needed */
+           min-height: 170px; /* Adjust height as needed*/ 
            padding: 20px;
-           width: 100%;
+           width: 32%;
            margin-bottom: 50px;
-           overflow: hidden;
            line-height: 1.3;
            border-radius: 40px;
+           box-sizing: border-box;
         }
         /*Responsive for tablets and desktop*/
-        @media (min-width: 768){
+        @media (max-width: 768px){
             .stat-item{
-                width: 32%;
-                margin-bottom: 0;
-            }
-             .stat-clean{
-                width: 32%;
-                margin-bottom: 0;
+                width: 100%;
+                margin-bottom: 20px;
             }
         }
         .stat-number {
@@ -276,7 +273,7 @@
     </div>
     <!-- offset search area end -->
     <!-- body overlay area start -->
-    <div class="body_overlay"></div>
+    
     <!-- body overlay area end -->
     <!-- crumbs area start -->
     <div class="crumbs-area">
@@ -322,7 +319,7 @@
         <div class="section reverse">
             <div class="section reverse">
                 <div class="image">
-                    <img src="assets/images/about 0.jpg"style="height:500px;width: 450px;" alt="Academic Image"/>
+                    <img src="assets/images/about 0.jpg" alt="Academic Image"/>
                 </div>
                 <div class="text" style="margin-top: 50px;">
                     <h2>Guiding Your Path withOur Mission</h2>
@@ -339,7 +336,7 @@
               <p>We aim to revolutionize the Study Abroad Service Sector by consistently innovating student services and facilitating connections between institutions, recruiters, and students worldwide.</p>
           </div>
           <div class="image">
-              <img src="assets/images/teamIIEC.jpg" style="height:350px ;" alt="Mision Image"/>
+              <img src="assets/images/teamIIEC.jpg"  alt="Mision Image"/>
           </div>
        </div> 
       </div>
@@ -348,7 +345,7 @@
     <!-- Step 2: Image left, text right -->
         <div class="section reverse">
             <div class="image">
-                <img src="assets/images/blog/blog-thumbnail2.jpg" style="height: 350px;width: 650px;" alt="Academic Image"/>
+                <img src="assets/images/blog/blog-thumbnail2.jpg" alt="Academic Image"/>
             </div>
             <div class="text" >
                 <h2>Why Choose IIEC?</h2>
@@ -367,12 +364,12 @@
               <p>At IIEC, we believe effective language learning involves much more than just passing exams. Our approach is holistic, combining rigorous training in English proficiency with real-world communication skills that are essential for success abroad. We focus on building your confidence to interact naturally in academic environments and professional settings.</p>
           </div>
           <div class="image">
-              <img src="assets/images/about2.jpg"style="height: 350px;width: 650px;" alt="Mision Image"/>
+              <img src="assets/images/about2.jpg" alt="Mision Image"/>
           </div>
        </div>
        <div class="section reverse">
             <div class="image">
-                <img src="assets/images/IIEC-team.jpg" style="height: 350px;width: 650px;" alt="Academic Image"/>
+                <img src="assets/images/IIEC-team.jpg"  alt="Academic Image"/>
             </div>
             <div class="text">
                 <h2>Why Choose Us?</h2>
@@ -390,12 +387,12 @@
                  <li>💡 By supporting ambition, they help people become success stories that inspire others worldwide.</li></p>
           </div>
           <div class="image">
-              <img src="assets/images/about 1.jpg"style="height: 350px;width: 650px;" alt="Mision Image"/>
+              <img src="assets/images/about 1.jpg" alt="Mision Image"/>
           </div>
        </div>
        <div class="section reverse">
             <div class="image">
-                <img src="assets/images/IIEC-team.jpg" style="height: 350px;width: 650px;" alt="Academic Image"/>
+                <img src="assets/images/IIEC-team.jpg"  alt="Academic Image"/>
             </div>
             <div class="text" style="margin-top: 40px;">
                 <h2>Our Vision:</h2>
@@ -408,7 +405,7 @@
     <!-- take toure area end -->
  
      <!-- cta area start --> 
-    <div class="stats-clean" style="width: 100%;">
+    <div class="stats-clean">
             <div class="stat-item">
                 <span class="stat-number" id="clients">30K</span>
                 <div class="stat-label">We Have Worked With Clients</div>

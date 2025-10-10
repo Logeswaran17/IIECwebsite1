@@ -280,7 +280,6 @@ button {
   flex: 1 1 300px;
   min-width: 240px;
   text-align: left;
-  margin-left: 90px;
   margin-top: 20px;
 }
 .footer-about h3 {
@@ -295,7 +294,7 @@ button {
 }
 .footer-social {
   display: flex;
-  gap: 16px;
+  gap: 8%;
   margin-top: 16px;
 }
 .footer-social a {

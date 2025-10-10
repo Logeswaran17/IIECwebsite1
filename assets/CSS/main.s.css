@@ -19,59 +19,28 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color:#030444;
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #556270; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #d9232d; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #030c4f; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #04084e;  /* The default color of the main navmenu links */
+  --nav-color: #556270;  /* The default color of the main navmenu links */
   --nav-hover-color: #d9232d; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #030547; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-color: #556270; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #d9232d; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
-.top-bar1 {
-  width: 100%;
-  background-color: #083562; /* Deep blue */
-  color: #ffffff; /* White text for contrast */
-  font-size: 14px;
-  padding: 8px 20px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
 
-.top-bar1 .contact-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--default-font);
-}
-
-.top-bar1 i {
-  color: #ffffff;
-  font-size: 14px;
-}
-@media (max-width: 768px) {
-  .top-bar1 {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-}
 .light-background {
-  --background-color: #f2f6f3;
+  --background-color: #f2f4f6;
   --surface-color: #ffffff;
 }
 
@@ -179,7 +148,6 @@ h6 {
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
-  background-color: #fcf8f8b5;
 }
 
 .header .logo {
@@ -229,7 +197,6 @@ h6 {
 
   .header .navmenu {
     order: 3;
-
   }
 }
 
@@ -346,12 +313,6 @@ h6 {
     visibility: visible;
   }
 }
-.services-img{
-  max-width: 90px;
-  margin: 0 auto;
-  display: block;
-  width: auto;
-}
 
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
@@ -377,7 +338,7 @@ h6 {
     padding: 10px 0;
     margin: 0;
     border-radius: 6px;
-    background-color: var(--nav-mobile-background-);
+    background-color: var(--nav-mobile-background-color);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -458,7 +419,7 @@ h6 {
   }
 
   .mobile-nav-active .mobile-nav-toggle {
-    color: #ffffff1c;
+    color: #fff;
     position: absolute;
     font-size: 32px;
     top: 15px;
@@ -722,8 +683,8 @@ h6 {
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
-  z-index: 1;
-  background: url(../images/main-slider-01.jpg);
+  color: var(--default-color);
+  background-color: var(--background-color);
   padding: 25px 0;
   position: relative;
 }
@@ -760,9 +721,9 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  
-  
-  scroll-margin-top: 0px;
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 90px;
   overflow: clip;
 }
 
@@ -841,7 +802,7 @@ section,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: 1;
 }
 
 .hero .carousel-item {
@@ -1579,7 +1540,7 @@ section,
   border: 0;
   padding: 12px 15px 12px 0;
   transition: 0.3s;
-  color: white;
+  color: var(--default-color);
   border-radius: 0;
   border-right: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
   font-weight: 600;
@@ -1607,9 +1568,7 @@ section,
 }
 
 .features .details p {
-  color: color-mix(in srgb, transparent 20%);
-  color: white;
-  font-weight: bold 1.2;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
 .features .details p:last-child {
@@ -2359,8 +2318,7 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section { 
-  margin: 0;
+.starter-section {
   /* Add your styles here */
 }
 

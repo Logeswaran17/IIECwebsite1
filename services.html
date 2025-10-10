@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Services - IIEC</title>
+  <title>Services</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/images/IIEC.jpg" rel="icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -17,23 +17,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  
-  <link rel="stylesheet" href="assets/CSS/styles1.css">
-  <link rel="stylesheet" href="assets/CSS/typography1.css">
-  <!-- Incorrect -->
-  <link rel="stylesheet" href="vendor/aos/aos.css">
-  <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.css">
-  <link href="vendor/bootstrap/css/bootstrap_min.css" rel="stylesheet">
-  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!--footer-social icons-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Top contact bar icons-->
+  <link href="vendor/bootstrap.s/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icon.s/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/aos.s/aos.css" rel="stylesheet">
+  <link href="vendor/glightbox.s/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper.s/swiper-bundle.min.css" rel="stylesheet">
+
   <!-- Main CSS File -->
-  <link rel="stylesheet" href="assets/CSS/main1.css">
+  <link href="assets/CSS/main.s.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Sailor
@@ -45,75 +36,62 @@
 </head>
 
 <body class="services-page">
-  <!-- Top Contact Bar -->
-  <header id="header">
-        <!-- header top area start -->
-        <div class="top-bar1">
-          <span id="phone" class="fa fa-phone" >: +91 9841512043 / +91 9841577880</span>
-          <span class="fab-fa-envelope">info@iiec.in</span>
-          <span >No.78, 1st Floor, V.V.Koil Street, Thiruvaleeswarar Nagar Thirumangalam, Anna Nagar West, Chennai – 600 040</span>
-        </div>
-        <!-- header top area end -->
-        <!-- header bottom area start -->
-        <div class="header-bottom">
-            <div class="container">
-                <div class="header-bottom-inner">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 col-sm-9">                            
-                        </div>
-                        <div class="col-xl-8 col-lg-7 d-none d-lg-block">
-                            <div class="main-menu d-flex align-items-center justify-content-between">
-                                <div class="logo">
-                                    <a href="logo1" ><em ><img  src="assets/images/IIEClogo-Bremove.png" alt="logo" class="logo-img"></em></a>
-                                </div>
-                                <nav >                                    
-                                    <ul id="m_menu_active" class="d-flex align-items-center" style="gap: 10%;">
-                                        <li><a href="index.html">Home</a>
-                                        </li>
-                                        <li class="active"><a href="about1.html" style="color: #030b66; ">About Us</a>
-                                            <ul class="submenu">
-                                                <li><a href="#section4">Team ?</a></li>
-                                                <li><a href="#section3">What we do?</a></li>
-                                                <li><a href="#section3">How it works?</a></li>
-                                            </ul>            
-                                        </li>
-                                        <li class="active"><a href="services1.html" style="color: #030b66">Services</a>
-                                            <ul class="submenu">
-                                                <li><a href="#section4">Training</a></li>
-                                                <li><a href="#section3">Testimonials</a></li>
-                                                <li><a href="#section3">Membership</a>                  
-                                                </li>
-                                            </ul>            
-                                        </li>
-                                        <li><a href="Contact1.html">Contact</a></li>
-                                        <li><a href="https://substack.com/@infoiiec">Blog</a>
-                                        </li>                                        
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- header bottom area end -->
-    </header>
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename"></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown"><a href="about1.html"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <!--<ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>-->
+              </li>
+            </ul>
+          </li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!--<a class="btn-getstarted" href="about.html">Get Started</a>-->
+
+    </div>
+  </header>
 
   <main class="main">
-    <div class="body_overlay"></div>
-    <!-- body overlay area end -->
-    <!-- crumbs area start -->
-    <div class="crumbs-area1">
-        <div class="container">
-            <div class="crumb-content">
-                <h4 class="crumb-title"><span>SERVICES</span></h4>
-                <h2 style="text-align:right;margin-top:150px; font-size: 20px; color: rgb(4, 4, 67);"><em><a class="btn-getstarted" href="about.html">HOME</a></em>/ SERVICES</h2>
-            </div>
-        </div>
-    </div>
-        <!-- Page Title -->
-            
-    <!-- End Page Title -->
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Services</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Services</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
     <!-- Services Section -->
     <section id="services" class="services section">
 
@@ -192,8 +170,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2 >Features</h2>
-        <p style="color: white;">Check Our Features<br></p>
+        <h2>Features</h2>
+        <p>Check Our Features<br></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -223,19 +201,19 @@
               <div class="tab-pane active show" id="features-tab-1">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3 style="color: white;">Architecto ut aperiam autem id</h3>
+                    <h3>Architecto ut aperiam autem id</h3>
                     <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
                     <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/images/tabs/tab-1.png" alt="Tab image" class="img-fluid">
+                    <img src="assets/images/tabs/tab-1.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
               <div class="tab-pane" id="features-tab-2">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3 style="color: white;">Et blanditiis nemo veritatis excepturi</h3>
+                    <h3>Et blanditiis nemo veritatis excepturi</h3>
                     <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
                     <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
                   </div>
@@ -247,7 +225,7 @@
               <div class="tab-pane" id="features-tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3 style="color: white;">Impedit facilis occaecati odio neque aperiam sit</h3>
+                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
                     <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
                     <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
                   </div>
@@ -259,7 +237,7 @@
               <div class="tab-pane" id="features-tab-4">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3 style="color: white;">Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
                     <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
                     <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
                   </div>
@@ -271,7 +249,7 @@
               <div class="tab-pane" id="features-tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3 style="color: white;">Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
                     <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
                     <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
                   </div>
@@ -290,59 +268,96 @@
 
   </main>
 
-  <footer class="footer" style="background-color: rgb(12, 1, 50);">
-  <div class="footer-container">
-    <div class="footer-info">
-      <div class="footer-logo">
-        <img style="width: 100px; height: 50px; border-radius: 10px;margin-left:60px" src="assets/images/IIEC_logo.jpg" alt="IIEC Logo">
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Sailor</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
       </div>
-      <p>
-        <strong><i style="margin-bottom: 65px; text-transform: none;" class="fa fa-location-dot"></i></strong> <a href="#" style="margin-right: 60px;text-align: left;">78,New No.8A, 1st Floor,V.V.Koil Street,Thiruvaleeswarar Nagar,Thirumangalam,Anna Nagar West,Chennai-600040</a><br>
-      </p>
-      <p>
-        <strong><i class="fa fa-phone"></i></strong> <a href="tel:+919841512043">+91 9841512043</a> / <a href="tel:+919841577880">+91 9841577880</a>
-      </p>
-      <p>
-        <strong><i class="fa fa-envelope"></i></strong> <a href="info@iiec.co.in">info@iiec.co.in</a>
-      </p>
     </div>
-    <div class="footer-about" >
-      <h3 style="color: white;">Working Hours</h3>
-      <p><ul style="color: white;">
-        <li>MON - SAT : 9:30AM - 6:30 PM</li><br>      
-        <li>SUNDAY : CLOSED</li>
-      </ul></p>
-      <div class="footer-social">
-        <a href="https://facebook.com/IIECEducation"><i class="fab fa-facebook"></i></a>
-        <a href="https://wa.me/919841512043"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://instagram.com/iiec_education"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@WeAreIIEC"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/in/iiec-global"><i class="fab fa-linkedin"></i></a>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Sailor</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
       </div>
     </div>
-  </div>
-  <div class="footer-copyright">
-    &copy; All Rights Reserved. Made by IIEC
-  </div>
-</footer>
+
+  </footer>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/aos/aos.js"></script>
-  <script src="vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/bootstrap.s/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/php-email-form.s/validate.s.js"></script>
+  <script src="vendor/aos.s/aos.js"></script>
+  <script src="vendor/glightbox.s/js/glightbox.min.js"></script>
+  <script src="vendor/imagesloaded.s/imagesloaded.pkgd.min.js"></script>
+  <script src="vendor/isotope-layout.s/isotope.pkgd.min.js"></script>
+  <script src="vendor/purecounter.s/purecounter_vanilla.js"></script>
+  <script src="vendor/waypoints.s/noframework.waypoints.js"></script>
+  <script src="vendor/swiper.s/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.s.js"></script>
 
 </body>
 
