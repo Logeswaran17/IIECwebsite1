@@ -221,7 +221,7 @@ a:hover {
   font-size: 1.2rem;
   width: 100%;
   text-align: center;
-    height: 30px;
+    height: auto;
     color: #ffffff;
     justify-content:space-between;
     align-items: center;
@@ -264,14 +264,13 @@ a:hover {
 }
 
 .sticky-header .header-bottom-inner {
-  border-color: #222;
+  border-color: #ffff;
 }
 
 .logo-img{
   display: block;
   width: 100%;
-  border-radius: 10px;
-  
+  border-radius: 10px; 
   float: left;
 
 }
@@ -317,9 +316,17 @@ a:hover {
   .logo {
     margin-bottom: 10px;
   }
+  @media(max-width:992px){
+    .header-bottom{
+    background-color:#31346c !important;
+    padding:10px;
+    border-radius:10px;
+    }
+  }
   .main-menu {
     justify-content: flex-start;
     width: 100%;
+    
   }
 
   .main-menu nav ul {
@@ -327,6 +334,7 @@ a:hover {
     gap: 10px;
   }
 }
+
 
 .sticky-header .main-menu nav > ul > li > a {
   padding: 38px 17px;
@@ -369,7 +377,7 @@ a:hover {
 }
 
 .main-menu nav .submenu li a {
-  color: #130475;
+  color: #e7e6ec !important;
   padding: 16px 15px;
   border-bottom: 1px solid #f1ebeb;
 }
@@ -380,13 +388,11 @@ a:hover {
   display: none;
 }
 
-.slicknav_menu {
-  background: transparent;
-  margin-top: 21px;
-}
+
 
 .slicknav_menu .slicknav_icon-bar {
   background-color: #ffffff;
+  
   height: 2px;
   width: 19px;
   margin: 3px 0px;
@@ -399,6 +405,7 @@ a:hover {
   position: relative;
   margin-top: -42px;
   cursor: pointer;
+  float: right;
 }
 
 .slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(2) {
@@ -422,14 +429,35 @@ a:hover {
 }
 
 .slicknav_nav {
-  background: #202020;
+  background: #eef2f2;
+  position: relative;
+  z-index: 999;
   margin: 0;
   padding: 0;
+}
+@media (max-width: 992px) {
+  .header-bottom {
+    position: relative;
+    z-index: 999;
+  }
+}@media (max-width: 992px) {
+  .main-menu nav li .submenu {
+    transform: none !important;
+    position: relative;
+    display: block !important;
+    color: #030b66;
+  }
+}
+@media (max-width: 992px){
+  .slicknav_nav a{
+    color: #021b63 !important;
+  }
 }
 
 .slicknav_nav a:hover {
   background: #fefefe;
   border-radius: 0;
+ 
 }
 
 .slicknav_nav a {
