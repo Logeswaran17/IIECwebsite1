@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Orbit Loader</title>
+  <style>
+  /* Fullscreen Loader */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffff, #ffff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Orbit Container */
+.orbit-container {
+  position: relative;
+  width: 250px;   /* Adjust size as needed */
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🌍 Globe Image */
+.globe-img {
+  align-items: center;  
+  width: 150px;           /* Globe size */
+  height: 150px;
+  object-fit: contain;
+  animation: spin 4s linear infinite;
+}
+
+/* ✈ Flight Image orbit */
+.flight-img {
+  position: absolute;
+  align-items: center;
+  width: 100px;           /* Flight size */
+  transform-origin: -130px center;  /* Orbit radius */
+  animation: orbit 3s linear infinite;
+}
+
+/* Loading Text */
+.loading-text {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+/* Animations */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes orbit {
+  0% { transform: rotate(0deg) translateX(130px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(130px) rotate(-360deg); }
+}
+</style>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loading-screen">
+    <div class="orbit-container">
+      <!-- 🌍 Globe Image (Replace globe.png with your image path) -->
+      <img src="assets/images/globe.blue.c.png" alt="Globe" class="globe-img">
+      
+      <!-- ✈ Flight Image -->
+      <img src="assets/images/flight.br.png" alt="Flight" class="flight-img">
+    </div>
+    <p class="loading-text">Loading...</p>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" style="display:none;">
+    <h1>Welcome to My Website</h1>
+    <p>This is your home page content.</p>
+  </div>
+
+  <script>
+    window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loading-screen').style.display = 'none';
+    document.getElementById('index.html').style.display = 'block';
+  }, 3000);
+});
+  </script>
+</body>
+</html>

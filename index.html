@@ -30,7 +30,16 @@ TemplateMo
   </head>
 
 <body>
-
+  <!-- Loader -->
+  <div id="loading-screen">
+    <div class="orbit-container">
+      <!-- 🌍 Globe Image (Replace globe.png with your image path) -->
+      <img src="assets/images/globe.png" alt="Globe" class="globe-img">
+      
+      <!-- ✈ Flight Image -->
+      <img src="assets/images/flight.br.png" alt="Flight" class="flight-img">
+    </div>
+  </div>
    
   <!--header-->
   <header class="main-header clearfix" role="header">
@@ -880,6 +889,12 @@ Subscribe to our IIEC Educational YouTube Channel for expert guidance, real stud
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
+       window.addEventListener('load', () => {
+         setTimeout(() => {
+      document.getElementById('loading-screen').style.display = 'none';
+      document.getElementById('index.html').style.display = 'block';
+         }, 3000);
+       });
       
 
         //according to loftblog tut

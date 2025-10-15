@@ -216,20 +216,21 @@ a:hover {
   vertical-align: middle;
 }
   *this is about us page*/
-.top-bar1{
+.top-bar{
   background-color: rgba(8, 28, 60, 0.873) ;
-  font-size: 1.2rem;
+  font-size: 0.90rem;
   width: 100%;
   text-align: center;
-    height: auto;
-    color: #ffffff;
-    justify-content:space-between;
-    align-items: center;
-    gap: 8%;
-    display: flex;
-    transition: opacity 0.4s, visibility 0.4s;
-    position:relative;
-    z-index:999;
+  height: auto;
+  color: #ffffff;
+  justify-content:space-between;
+  align-items: center;
+  gap: 8%;
+  display: flex;
+  transition: opacity 0.4s, visibility 0.4s;
+  position:relative;
+  z-index:999;
+    
 }
 
 /*============================================
@@ -2586,22 +2587,22 @@ h4.comment-title {
 /* style.css */
 .stats-clean {
   display: flex;
-  justify-content: center;
-  gap: 5px; /* wide gap between stat items */
-  margin-top: 25px;
-  margin-bottom: 15px;
+  justify-content:flex-end;
+  gap: 20px; /* wide gap between stat items */
+  
   
 }
 
 .stat-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
   background: #ece6e6a3;
-  border: -1px solid #c3b3b3ab;
+  border: 1px solid #c3b3b3ab;
   box-shadow: 0 2px 8px rgba(227,49,60,0.07);
-  padding: 150px 180px;
-  min-width: 340px;
-  justify-content: center;
+  padding: 40px 30px;
+  min-width: 250px;
+  border-radius: 10px;
 }
 
 .stat-number {
@@ -2627,4 +2628,50 @@ h4.comment-title {
   font-weight: bold;
   margin-right: 18px;
   vertical-align: middle;
+}
+@media (max-width:100%){
+  .stats-clean {
+  display: flex;
+  justify-content:flex-end;
+  gap: 20px; /* wide gap between stat items */
+  
+  
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ece6e6a3;
+  border: 1px solid #c3b3b3ab;
+  box-shadow: 0 2px 8px rgba(227,49,60,0.07);
+  padding: 40px 30px;
+  min-width: 250px;
+  border-radius: 10px;
+}
+
+.stat-number {
+  font-size: 2.7em;
+  font-weight: bold;
+  color: #b71c1c; /* red */
+  margin-bottom: 8px;
+  vertical-align: middle;
+}
+
+.stat-label {
+  font-size: 1em;
+  color: #b71c1c; /* red */
+  margin: 0;
+  text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+  
+  
+  
+}
+.stat-unit{
+  font-size: 2.7em;
+  color: #b71c1c; /* red */
+  font-weight: bold;
+  margin-right: 18px;
+  vertical-align: middle;
+}
 }

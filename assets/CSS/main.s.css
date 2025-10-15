@@ -19,7 +19,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #03176e; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #556270; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #d9232d; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -64,6 +64,91 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+}
+.top-bar {
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: auto;
+  background: #173c7b;
+  color: #fff;
+  font-size:13px;
+  padding:8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+/* Adjust container to use flex for alignment */
+.container-fluid container-xl position-relative d-flex align-items-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* Logo left */
+.logo {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+/* Navmenu right */
+.navmenu {
+  flex: 1 1 auto;
+  margin-left: auto;
+}
+
+/* Navmenu items right-aligned */
+.navmenu ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Standard nav-item styling */
+.navmenu li {
+  position: relative;
+}
+
+.navmenu a {
+  color: #173C7B;
+  padding: 12px 14px;
+  font-size: 15px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+  background: none;
+  border: none;
+}
+
+.navmenu li:hover > a,
+.navmenu .active > a {
+  color: #b00606;
+}
+
+/* Optional: for dropdown styling already in use */
+.navmenu .dropdown ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #f7f7f7;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+  display: none;
+}
+
+.navmenu .dropdown:hover > ul {
+  display: block;
 }
 
 a {
@@ -144,28 +229,25 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: var(--surface-color);
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
+  margin-top: 30px;
+  
 }
 
 .header .logo {
   line-height: 1;
+  
 }
 
 .header .logo img {
   max-height: 36px;
-  margin-right: 8px;
+  
+ 
 }
 
-.header .logo h1 {
-  font-size: 28px;
-  margin: 0;
-  font-weight: 700;
-  color: var(--heading-color);
-  text-transform: uppercase;
-}
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
@@ -211,6 +293,7 @@ h6 {
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
+    
   }
 
   .navmenu ul {
@@ -219,6 +302,7 @@ h6 {
     display: flex;
     list-style: none;
     align-items: center;
+    justify-content:right;
   }
 
   .navmenu li {
@@ -1242,7 +1326,7 @@ section,
   font-size: 18px;
   margin: 0;
   font-weight: 700;
-  color: var(--default-color);
+  color: var(--surface-color);
 }
 
 .about-2 .tab-content i {
@@ -1265,7 +1349,7 @@ section,
 }
 
 .stats .stats-item span {
-  color: var(--heading-color);
+  color: var(--surface-color);
   font-size: 48px;
   display: block;
   font-weight: 700;
@@ -1288,7 +1372,7 @@ section,
 }
 
 .stats .stats-item p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, var(--surface-color), transparent 40%);
   padding: 0;
   margin: 0;
   font-family: var(--heading-font);
@@ -1306,7 +1390,7 @@ section,
 }
 
 .skills .progress .skill {
-  color: var(--heading-color);
+  color: var(--surface-color);
   padding: 0;
   margin: 0 0 6px 0;
   text-transform: uppercase;
@@ -1321,7 +1405,7 @@ section,
 }
 
 .skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  background: color-mix(in srgb, var(--surface-color), transparent 90%);
   height: 10px;
 }
 
@@ -1399,7 +1483,7 @@ section,
   display: block;
   width: 50px;
   height: 1px;
-  background: color-mix(in srgb, var(--default-color), transparent 85%);
+  background: color-mix(in srgb, var(--surface-color), transparent 85%);
   bottom: 0;
   left: 0;
 }
@@ -1430,7 +1514,7 @@ section,
 }
 
 .team .team-member .social a {
-  background: color-mix(in srgb, var(--default-color), transparent 94%);
+  background: color-mix(in srgb, var(--surface-color), transparent 94%);
   transition: ease-in-out 0.3s;
   display: flex;
   align-items: center;
@@ -1441,7 +1525,7 @@ section,
 }
 
 .team .team-member .social a i {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--surface-color), transparent 20%);
   font-size: 16px;
   margin: 0 2px;
 }
@@ -1485,7 +1569,7 @@ section,
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--surface-color), transparent 20%);
   margin: 0;
 }
 
@@ -1540,9 +1624,9 @@ section,
   border: 0;
   padding: 12px 15px 12px 0;
   transition: 0.3s;
-  color: var(--default-color);
+  color: var(--surface-color);
   border-radius: 0;
-  border-right: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-right: 2px solid color-mix(in srgb, var(--surface-color), transparent 90%);
   font-weight: 600;
   font-size: 15px;
 }
@@ -1568,7 +1652,7 @@ section,
 }
 
 .features .details p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--surface-color), transparent 20%);
 }
 
 .features .details p:last-child {
@@ -1593,7 +1677,7 @@ section,
 .service-details .services-list {
   background-color: var(--surface-color);
   padding: 10px 30px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border: 1px solid color-mix(in srgb, var(--surface-color), transparent 90%);
   margin-bottom: 20px;
 }
 
@@ -1601,14 +1685,14 @@ section,
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
-  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  border-left: 3px solid color-mix(in srgb, var(--surface-color), transparent 70%);
   margin: 20px 0;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--surface-color), transparent 20%);
   transition: 0.3s;
 }
 
 .service-details .services-list a.active {
-  color: var(--heading-color);
+  color: var(--surface-color);
   font-weight: 700;
   border-color: var(--accent-color);
 }
@@ -1668,7 +1752,7 @@ section,
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  background-color: color-mix(in srgb, var(--surface-color), transparent 85%);
   opacity: 1;
 }
 
@@ -1687,7 +1771,7 @@ section,
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-bottom: 1px solid color-mix(in srgb, var(--surface-color), transparent 85%);
 }
 
 .portfolio-details .portfolio-info ul {
@@ -1712,7 +1796,7 @@ section,
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--surface-color), transparent 30%);
 }
 
 /*--------------------------------------------------------------
@@ -1734,14 +1818,14 @@ section,
   padding: 20px 15px;
   font-size: 16px;
   font-weight: 600;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--surface-color), transparent 20%);
   background: color-mix(in srgb, var(--default-color), transparent 95%);
 }
 
 .pricing .pricing-item h4 {
   font-size: 36px;
   font-weight: 600;
-  font-family: var(--heading-font);
+  font-family: var(--surface-color);
 }
 
 .pricing .pricing-item h4 sup {
@@ -1751,7 +1835,7 @@ section,
 }
 
 .pricing .pricing-item h4 span {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, var(--surface-color), transparent 40%);
   font-size: 16px;
   font-weight: 300;
 }
@@ -1775,7 +1859,7 @@ section,
 }
 
 .pricing .pricing-item ul .na {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, var(--surface-color), transparent 40%);
   text-decoration: line-through;
 }
 
@@ -1846,7 +1930,7 @@ section,
 }
 
 .blog-posts .title a {
-  color: var(--heading-color);
+  color: var(--surface-color);
   transition: 0.3s;
 }
 
@@ -1856,7 +1940,7 @@ section,
 
 .blog-posts .meta-top {
   margin-top: 20px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, var(--surface-color), transparent 40%);
 }
 
 .blog-posts .meta-top ul {
@@ -1876,7 +1960,7 @@ section,
   font-size: 16px;
   margin-right: 8px;
   line-height: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--surface-color), transparent 20%);
 }
 
 .blog-posts .meta-top a {
