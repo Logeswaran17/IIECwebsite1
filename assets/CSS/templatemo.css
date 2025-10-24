@@ -39,14 +39,26 @@ body {
   justify-content: center;
   align-items: center;
 }
+/* 🌀 IIEC Logo Behind Globe */
+.IIEClogo-Bremove1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  z-index: 2; /* Behind the globe */
+  opacity: 6; /* Optional: make it subtle */
+}
+
 
 /* 🌍 Globe Image */
 .globe-img {
-  align-items: center;  
+  position: absolute;
   width: 150px;           /* Globe size */
   height: 150px;
   object-fit: contain;
   animation: spin 4s linear infinite;
+  z-index: 1;
+  opacity: 1; /* Optional: make it subtle */
 }
 
 /* ✈ Flight Image orbit */
@@ -252,6 +264,8 @@ a.menu-link { display: none; }
     width: 100%;
     max-width: 100%;
     top: 0;
+    left: 0;
+    position: fixed;
 }
 
 .main-header .logo {
@@ -262,6 +276,7 @@ a.menu-link { display: none; }
     background-position: center;
     margin: 0;
     padding: 0;
+    margin-left: 8%;
 }
 
 
@@ -287,6 +302,7 @@ a.menu-link { display: none; }
 .main-menu li a {
     padding: 10px 15px;
     font-size: 13px;
+
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 700;
@@ -306,13 +322,73 @@ a.menu-link { display: none; }
     display: none;
 }
 
+.main-menu li {
+    position: relative; /* Needed for absolute positioning of sub-menu */
+}
+/*service sub-menu*/
+.main-menu li .sub-menu1 {
+    position: absolute;
+    width: 200px;
+    background-color: #ffffff; /* corrected from #ffff to #fff */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    top: 100%; /* Position below the parent li */
+    left: 0;
+    z-index: 1000;
+    
+}
+
+.main-menu li:hover .sub-menu1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-menu li:hover .sub-menu1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-menu li .sub-menu1 li {
+    display: block;
+    line-height: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #172f12;
+}
+
+.main-menu li .sub-menu1 li:first-child {
+    padding-top: 15px;
+}
+
+.main-menu li .sub-menu1 li:last-child {
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+
+.main-menu li .sub-menu1 li a {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0px 15px;
+    letter-spacing: 0.5px;
+    border: none;
+    transition: all 0.5s;
+}
+/*about us sub-menu*/
 .main-menu li .sub-menu {
     position: absolute;
     width: 160px;
-    background-color: #18233a;
+    background-color: #ffffff; /* corrected from #ffff to #fff */
     opacity: 0;
     visibility: hidden;
-    transition: all 0.5s;
+    transition: all 0.5s ease;
+    top: 100%; /* Position below the parent li */
+    left: 0;
+    z-index: 1000;
+}
+
+.main-menu li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
 }
 
 .main-menu li:hover .sub-menu {
@@ -1732,18 +1808,17 @@ footer p a:hover {
 }
 .footer-about h3 {
   font-size: 18px;
-  margin-bottom: 12px;
+
   color: #f1f1f1;
 }
 .footer-about p {
   font-size: 14px;
   color: #e0e0e0;
-  margin-bottom: 18px;
 }
 .footer-social {
   display:flex;
   gap: 2%;
-  margin-top: 16px;
+  
 }
 .footer-social a {
   color: #fff;

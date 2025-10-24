@@ -90,11 +90,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Logo left */
-.logo {
-  flex: 0 0 auto;
-  margin-right: 20px;
-}
 
 /* Navmenu right */
 .navmenu {
@@ -230,10 +225,25 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--surface-color);
-  padding: 15px 0;
+  padding: 10px 0;
   transition: all 0.5s;
   z-index: 997;
   margin-top: 30px;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+}
+.main{
+  padding-top: 120px;
+}
+@media (max-width: 992px){
+  .header{
+    margin-top: 70px;
+
+  }
+  .main{
+    padding-top: 150px;
+  }
   
 }
 
@@ -243,7 +253,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  height: 70px;
+  
   
  
 }
@@ -407,11 +418,14 @@ h6 {
     margin-right: 10px;
     cursor: pointer;
     transition: color 0.3s;
+   
   }
 
   .navmenu {
     padding: 0;
     z-index: 9997;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .navmenu ul {
@@ -2699,19 +2713,16 @@ footer p a:hover {
   flex: 1 1 300px;
   min-width: 240px;
   text-align: left;
-
-  margin-top: 20px;
   color: white;
+  margin-top: 20px;
 }
 .footer-about h3 {
   font-size: 18px;
-  margin-bottom: 12px;
   color: #f1f1f1;
 }
 .footer-about p {
   font-size: 14px;
   color: #e0e0e0;
-  margin-bottom: 18px;
 }
 .footer-social {
   display:flex;

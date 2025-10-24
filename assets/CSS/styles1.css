@@ -217,8 +217,8 @@ a:hover {
 }
   *this is about us page*/
 .top-bar{
-  background-color: rgba(8, 28, 60, 0.873) ;
-  font-size: 0.90rem;
+  background-color: #173c7b ;
+  font-size: 1.0rem;
   width: 100%;
   text-align: center;
   height: auto;
@@ -230,7 +230,16 @@ a:hover {
   transition: opacity 0.4s, visibility 0.4s;
   position:relative;
   z-index:999;
+  padding: 8px 0;
+  text-transform: none !important;
+
     
+}
+@media (max-width: 992px){
+  .tob-bar{
+    z-index: 999;
+  }
+
 }
 
 /*============================================
@@ -300,7 +309,7 @@ a:hover {
 .main-menu nav ul li a {
   font-size: 13px;
   font-weight:bolder;
-  color: #030b66;
+  color: #eff0f4;
   text-transform: uppercase;
   padding: 15px 10px;
   display: block;
@@ -339,6 +348,7 @@ a:hover {
 
 .sticky-header .main-menu nav > ul > li > a {
   padding: 38px 17px;
+  color: #021b63;
 }
 
 .main-menu nav ul li > a:hover,
@@ -349,12 +359,13 @@ a:hover {
 /*submenu*/
 .main-menu nav .submenu {
   display: block;
+  
 }
 
 .main-menu nav li .submenu {
   position: absolute;
-  background-color: #ede7e7da;
-  width: 160px;
+  background-color: white;
+  width: 176px;
   text-align: left;
   -webkit-transform: scaley(0);
   -ms-transform: scaley(0);
@@ -378,9 +389,10 @@ a:hover {
 }
 
 .main-menu nav .submenu li a {
-  color: #e7e6ec !important;
+  color: #022b6e !important;
   padding: 16px 15px;
   border-bottom: 1px solid #f1ebeb;
+  
 }
 
 /* mobile menu slicknav*/
@@ -2584,7 +2596,7 @@ h4.comment-title {
   margin-right: 8px;
   width: auto;
 }
- .stats-clean {
+/* .stats-clean {
             display: flex;
             justify-content: space-between;
             height: 400px;
@@ -2595,7 +2607,7 @@ h4.comment-title {
            flex-direction: column;
            justify-content: center;
            align-items: center;
-           min-height: 170px; /* Adjust height as needed */
+           min-height: 170px; /* Adjust height as needed 
            padding: 20px;
            width: 32%;
            margin-bottom: 50px;
@@ -2654,12 +2666,13 @@ h4.comment-title {
 
 .team-section {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 0;
 }
 
 .team-title {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  
+
 }
 
 .team-lead {
@@ -2676,14 +2689,14 @@ h4.comment-title {
 
 .lead-name {
   margin-top: 1rem;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 2.2rem;
+  font-weight: 30px;
 }
 
 .lead-desc {
   margin-top: 0.5rem;
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 1.9rem;
+  color: #070606;
 }
 
 .team-members {
