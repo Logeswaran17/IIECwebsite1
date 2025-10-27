@@ -216,32 +216,40 @@ a:hover {
   vertical-align: middle;
 }
   *this is about us page*/
-.top-bar{
-  background-color: #173c7b ;
-  font-size: 1.0rem;
-  width: 100%;
-  text-align: center;
-  height: auto;
-  color: #ffffff;
-  justify-content:space-between;
-  align-items: center;
-  gap: 8%;
-  display: flex;
-  transition: opacity 0.4s, visibility 0.4s;
-  position:relative;
-  z-index:999;
-  padding: 8px 0;
-  text-transform: none !important;
-
-    
+/*fist head*/
+.top-bar {
+    background-color: rgba(8, 28, 60, 0.873);
+    text-align: center;
+    height: 20%;
+    color: #ffffff;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 1rem;
+    gap: 3%;
+    width: 100%;
+    display: flex;
+    transition: opacity 0.4s, visibility 0.4s;
+    position:relative;
+    z-index:999;
 }
-@media (max-width: 992px){
-  .tob-bar{
-    z-index: 999;
+
+
+.phone-number{
+  font-size: 0.82rem;
+  letter-spacing: 1.2px;   /* Smooth spacing between digits */
+  word-spacing: 1px;
+
+}
+@media (max-width:992){
+  .phone-number{
+    line-height: 1px;
+    line-break: 2px;
+    margin-left: 5px;
   }
+  .top-bar{
 
+  }
 }
-
 /*============================================
     END Header Top
 *=============================================*/

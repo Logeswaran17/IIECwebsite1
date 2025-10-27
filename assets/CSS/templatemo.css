@@ -96,13 +96,31 @@ body {
     color: #ffffff;
     justify-content:space-between;
     align-items: center;
-    font-size: 0.76rem;
+    font-size: 0.70rem;
     gap: 8%;
     width: 100%;
     display: flex;
     transition: opacity 0.4s, visibility 0.4s;
     position:relative;
     z-index:999;
+}
+
+
+.phone-number{
+  font-size: 0.5rem;
+  letter-spacing: 1.2px;   /* Smooth spacing between digits */
+  word-spacing: 1px;
+
+}
+@media (max-width:992){
+  .phone-number{
+    line-height: 5px;
+    line-break: 2px;
+    margin-left: 5px;
+  }
+  .top-bar{
+    gap: auto;
+  }
 }
 
 /* Basic */
@@ -243,9 +261,10 @@ a.menu-link { display: none; }
 
 /* Header */
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 992px) {
   .main-header .logo {
       padding-left: 30px!important;
+      
   }
 
   .main-menu {
@@ -267,6 +286,11 @@ a.menu-link { display: none; }
     left: 0;
     position: fixed;
 }
+@media (max-width:992){
+  .main-header{
+    position: absolute;
+  }
+}
 
 .main-header .logo {
     float: left;
@@ -277,6 +301,11 @@ a.menu-link { display: none; }
     margin: 0;
     padding: 0;
     margin-left: 8%;
+}
+@media (max-width:992){
+  .main-logo{
+    right: 12px;
+  }
 }
 
 
@@ -1879,6 +1908,12 @@ footer p a:hover {
     font-weight: 600;
     letter-spacing: 0.25px;
 
+  }
+  .footer-container{
+    margin-left: 30px;
+  }
+  .footer-logo{
+    margin-left: 30px;
   }
 }
 }
