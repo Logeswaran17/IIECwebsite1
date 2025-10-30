@@ -1,4 +1,4 @@
- (function($) {
+(function($) {
   $(document).ready(function() {
     $('body').addClass('js');
 
@@ -95,3 +95,10 @@
     }, 1000);
   }
 })(jQuery);
+
+jQuery(document).ready(function() {
+	
+	"use strict";
+	// Your custom js code goes here.
+
+});
